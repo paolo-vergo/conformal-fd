@@ -1,5 +1,4 @@
-# conformal.fd
-Conformal inference prediction regions for Multiple Functional response regression
+# Conformal inference prediction regions for Multiple Functional response regression
 
 This repository contains the R package [conformalInference.fd](https://cran.r-project.org/web/packages/conformalInference.fd/index.html) (now available also on CRAN), which can produce valid prediction regions at levels 1-α or 1-2α under the basic assumption of _i.i.d._ regression data. 
 
