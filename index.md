@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+This repository contains the R package [conformalInference.fd](https://cran.r-project.org/web/packages/conformalInference.fd/index.html) (now available also on CRAN), which can produce valid prediction regions at levels 1-α or 1-2α under the basic assumption of _i.i.d._ regression data. 
 
-You can use the [editor on GitHub](https://github.com/paolo-vergo/conformal.fd/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The package was developed as part of my MSc. final thesis in Mathematical Engineering at Politecnico di Milano, as a functional extension of the main methods for Conformal Prediction for regression in the univariate response case.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Code Structure
 
-### Markdown
+There are three main famililies of functions:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Prediction methods
+- Regression methods
+- Plot methods
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+The central idea upon which the package is designed is the following: regression methods **should not** be included into the prediction methods themselves. Final users can pass as input to the prediction methods custom-coded regression algorithms, which may be more suitable for the prediction task at hand. Anyways the most common regression methods are implemented in the package.
 
-- Bulleted
-- List
+### Main Functions
 
-1. Numbered
-2. List
+<br/>
+<div align="center">
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+| Syntax      | Description |
+| ----------- | ---------------- |
+|concurrent| Build concurrent regression model|
+|conformal.fun.jackplus | Computes Jackknife+ prediction sets|
+|conformal.fun.split| Computes Split Conformal prediction sets|
+|conformal.fun.msplit| Computes Multi Split Conformal prediction sets|
+|mean_lists |Build regression method with mean|
+|plot_fun |Plot the output prediction methods|
+  
+  </div>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+### Detailed description
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/paolo-vergo/conformal.fd/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+A complete description of the theory underpinning the package, an analysis of all the main functions as well as a case study is presented in my final MSc. thesis paper, availble at the following [link]().
 
-### Support or Contact
+### Acknownledgments
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Prof. Simone Vantini - _Politecnico di Milano_
+
+Dr. Jacopo Diquigiovanni
+
+Dr. Matteo Fontana
+
+Prof. Aldo Solari - _Università Bicocca di Milano_
