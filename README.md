@@ -23,10 +23,12 @@ The central idea upon which the package is designed is the following: regression
 
 | Syntax      | Description |
 | ----------- | ---------------- |
+|concurrent| Build concurrent regression model|
 |conformal.fun.jackplus | Computes Jackknife+ prediction sets|
 |conformal.fun.split| Computes Split Conformal prediction sets|
 |conformal.fun.msplit| Computes Multi Split Conformal prediction sets|
-
+|mean_lists |Build regression method with mean|
+|plot_fun |Plot the output prediction methods|
   
   </div>
 
