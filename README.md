@@ -1,48 +1,52 @@
-# Conformal inference prediction regions for Multiple Functional response regression
+# Conformal Inference Prediction Regions for Multiple Functional Response Regression
 
-This repository contains the R package [conformalInference.fd](https://cran.r-project.org/web/packages/conformalInference.fd/index.html) (now available also on CRAN), which can produce valid prediction regions at levels 1-α or 1-2α under the basic assumption of _i.i.d._ regression data. 
-
-The package was developed as part of my MSc. final thesis in Mathematical Engineering at Politecnico di Milano, as a functional extension of the main methods for Conformal Prediction for regression in the univariate response case.
-
-### Code Structure
-
-There are three main famililies of functions:
-
-- Prediction methods
-- Regression methods
-- Plot methods
-
-
-The central idea upon which the package is designed is the following: regression methods **should not** be included into the prediction methods themselves. Final users can pass as input to the prediction methods custom-coded regression algorithms, which may be more suitable for the prediction task at hand. Anyways the most common regression methods are implemented in the package.
-
-### Main Functions
-
-<br/>
 <div align="center">
+  <img src="./readmepic/Graphs.png" alt="Base image" width="600">
+</div>
 
 
-| Syntax      | Description |
-| ----------- | ---------------- |
-|concurrent| Build concurrent regression model|
-|conformal.fun.jackplus | Computes Jackknife+ prediction sets|
-|conformal.fun.split| Computes Split Conformal prediction sets|
-|conformal.fun.msplit| Computes Multi Split Conformal prediction sets|
-|mean_lists |Build regression method with mean|
-|plot_fun |Plot the output prediction methods|
-  
-  </div>
+<br> <br>
 
+This repository hosts the R package [conformalInference.fd](https://cran.r-project.org/web/packages/conformalInference.fd/index.html) (now available on CRAN), a powerful tool for generating valid prediction regions at levels 1-α or 1-2α, specifically designed for multiple functional response regression.
 
-### Detailed description
+Unlike traditional methods, conformalInference.fd offers a non-parametric approach that embraces the complexity of functional data. It allows you to perform regression analysis without assuming any specific parametric form for the underlying data distribution. This flexibility enables accurate predictions and insights in a wide range of real-world applications.
 
-A complete description of the theory underpinning the package, an analysis of all the main functions as well as a case study is presented in my final MSc. thesis paper, availble at the following [link]().
+Developed as part of my MSc. final thesis in Mathematical Engineering at Politecnico di Milano, conformalInference.fd extends the core methods of Conformal Prediction for regression in the univariate response case to handle the unique challenges posed by multiple functional response data.
 
-### Acknownledgments
+## Code Structure
 
-Prof. Simone Vantini - _Politecnico di Milano_
+The package is organized into three main families of functions, providing a comprehensive framework for efficient and flexible functional response regression analysis:
 
-Dr. Jacopo Diquigiovanni
+1. Prediction methods: These functions compute prediction regions, empowering you to make accurate predictions with confidence.
+2. Regression methods: This family of functions allows for the incorporation of custom-coded regression algorithms, providing users with flexibility in choosing the most suitable method for their prediction tasks. Additionally, the package includes the implementation of common regression methods.
+3. Plot methods: Visualize and interpret the output of prediction methods using the plot functions provided in this package.
 
-Dr. Matteo Fontana
+By separating the regression methods from the prediction methods, conformalInference.fd offers users the freedom to tailor their regression analysis to their specific needs, ensuring ultimate flexibility and customization.
 
-Prof. Aldo Solari - _Università Bicocca di Milano_
+## Main Functions
+
+| Syntax                    | Description                                 |
+| ------------------------- | ------------------------------------------- |
+| concurrent                | Build concurrent regression models           |
+| conformal.fun.jackplus    | Computes Jackknife+ prediction sets          |
+| conformal.fun.split       | Computes Split Conformal prediction sets     |
+| conformal.fun.msplit      | Computes Multi Split Conformal prediction sets|
+| mean_lists                | Build regression methods with mean           |
+| plot_fun                  | Plot the output of prediction methods        |
+
+## Detailed Description
+
+For a comprehensive understanding of the theoretical foundations, detailed analysis of the main functions, and case studies, please refer to my final MSc. thesis paper. The paper provides valuable insights, practical guidance, and in-depth exploration of the conformalInference.fd package. You can access the paper at the following [link](https://arxiv.org/abs/2106.01792).
+
+## Acknowledgments
+
+I would like to express my sincere gratitude to the following individuals for their invaluable contributions and unwavering support throughout the development of this project:
+
+- **Prof. Simone Vantini** - _Politecnico di Milano_
+- **Dr. Jacopo Diquigiovanni** - _Research collaborator_
+- **Dr. Matteo Fontana** - _Research collaborator_
+- **Prof. Aldo Solari** - _Università Bicocca di Milano_
+
+Their knowledge, expertise, and encouragement have been instrumental in shaping and refining the conformalInference.fd package, making it an exceptional tool for regression analysis with multiple functional response data.
+
+Explore the conformalInference.fd package and experience the power of accurate and versatile regression analysis in the realm of complex functional data. Unleash the full potential of your data and gain robust insights
