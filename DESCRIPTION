@@ -5,7 +5,7 @@ Title: Tools for Conformal Inference for Regression in Multivariate
 Version: 1.0
 Authors@R: c(
     person("Jacopo", "Diquigiovanni", role = "aut"),
-    person("Matteo", "Fontana", , "matteo.fontana@ec.europa.eu", role = "aut"),
+    person("Matteo", "Fontana", , "matteo.fontana@rhul.ac.uk", role = c("aut",'cre'),
     person("Aldo", "Solari", role = "aut"),
     person("Simone", "Vantini", role = "aut"),
     person("Paolo", "Vergottini", , "paolo.vergottini@gmail.com", role = c("aut", "cre")),

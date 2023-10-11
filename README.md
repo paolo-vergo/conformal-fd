@@ -44,7 +44,7 @@ I would like to express my sincere gratitude to the following individuals for th
 
 - **Prof. Simone Vantini** - _Politecnico di Milano_
 - **Dr. Jacopo Diquigiovanni** - _Research collaborator_
-- **Dr. Matteo Fontana** - _Research collaborator_
+- **Dr. Matteo Fontana** - _Royal Holloway, University of London_
 - **Prof. Aldo Solari** - _Università Bicocca di Milano_
 
 Their knowledge, expertise, and encouragement have been instrumental in shaping and refining the conformalInference.fd package, making it an exceptional tool for regression analysis with multiple functional response data.
